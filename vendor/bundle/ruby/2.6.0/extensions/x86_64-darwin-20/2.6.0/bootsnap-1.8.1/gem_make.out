@@ -1,0 +1,15 @@
+current directory: /Users/kokiseno/ruby/environment/sns-spa/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.8.1/ext/bootsnap
+/Users/kokiseno/.rbenv/versions/2.6.6/bin/ruby -I /Users/kokiseno/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210914-89716-1yvxwoo.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kokiseno/ruby/environment/sns-spa/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.8.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/kokiseno/ruby/environment/sns-spa/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.8.1/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/kokiseno/ruby/environment/sns-spa/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.8.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20210914-89716-ihqpo7/bootsnap
