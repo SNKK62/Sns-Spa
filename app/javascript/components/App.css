@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.parent{
+    display: flex;
+}
+.child{
+    width: 50vw;
+    display: grid;
+    grid-template-rows: 90px 50px 50px 1fr;
+    grid-template-columns: 80px 1fr;
+    position: relative;
+}
+.child-two{
+    
+    width: 50vw;
+    height: 100vh;
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    border-left: 1px solid black;
+    padding:5px 5px 5px 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .parent {
+        display: block;
+    }
+    .child{
+        width: 100%;
+    }
+    .child-two{
+        width: 100%;
+        margin-bottom: 10px;
+        
+        border-left: 0;
+    }
+    .border-bottom{
+        border-bottom: 0.5px solid black;
+    }
+}
