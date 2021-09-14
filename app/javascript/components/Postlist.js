@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
-import './App.css'
 import axios from 'axios'
+import '../../assets/stylesheets/App.css'
+
 import { Link } from 'react-router-dom'
 
 

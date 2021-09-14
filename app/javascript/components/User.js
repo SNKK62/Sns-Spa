@@ -5,7 +5,7 @@ import UserPostlist from './UserPostlist'
 import { AiFillEdit } from 'react-icons/ai'
 import Profile from './Profile'
 
-import './App.css'
+import '../../assets/stylesheets/App.css'
 import axios from 'axios'
 import Modal from './Modal'
 

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import {AiOutlineClose} from 'react-icons/ai'
 
-import './App.css'
+import '../../assets/stylesheets/App.css'
 import axios from 'axios'
 import Edituser from './Edituser'
 import Userimage from './Userimage'

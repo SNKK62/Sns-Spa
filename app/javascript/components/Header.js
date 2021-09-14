@@ -6,8 +6,9 @@ import {AiOutlineMenu} from 'react-icons/ai'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 import {FiDelete} from 'react-icons/fi'
 import Drop from './Drop'
-import './App.css'
 import axios from 'axios'
+import '../../assets/stylesheets/App.css'
+
 
 const Headerstyle = styled.div`
   background: rgb(153,204,255);

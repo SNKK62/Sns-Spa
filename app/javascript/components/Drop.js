@@ -6,7 +6,7 @@ import {AiOutlineMenu} from 'react-icons/ai'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 import {FiDelete} from 'react-icons/fi'
 
-import './App.css'
+import '../../assets/stylesheets/App.css'
 import axios from 'axios'
 
 const Menues = styled.ul`
