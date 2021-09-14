@@ -22,4 +22,5 @@ test:
 
 production:
   <<: *default
-  database: postgresqi
+  adapter: postgresql
+  database: db/production.postgresql
