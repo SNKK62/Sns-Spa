@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import styled from 'styled-components'
 import axios from 'axios'
@@ -31,6 +31,19 @@ function App(props) {
             })
         .catch(e => {console.log(e)})
     }
+
+    
+    // 戻るボタンを押した時の処理を追加
+    history.pushState(null, null, '/posts');
+    // history.replaceState(null,null,null)
+
+    // window.addEventListener("pushState", function() {
+    
+    // // -2で2つ戻る(-1なら1つ戻る)
+    // // history.go(-2);
+    // history.pushState(null, null, null);
+        
+    // })
 
     return (
         <>
