@@ -12,7 +12,7 @@ import axios from 'axios'
 const Headerstyle = styled.div`
   background: rgb(153,204,255);
   height: 50px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   margin-bottom: 15px;
@@ -66,7 +66,7 @@ const Backbutton = styled.span`
 
 const Serchback = styled.div`
   
-  width: 100vw;
+  width: 100%;
   padding-top: 30px;
   left:0;
   display: flex;
@@ -82,7 +82,7 @@ const Serchback = styled.div`
 
 const Selectbar = styled.div`
   height: 50px;
-  width:100vw;
+  width:100%;
   
   position: absolute;
   top: 50px;
