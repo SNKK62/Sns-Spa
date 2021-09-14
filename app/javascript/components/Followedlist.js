@@ -53,6 +53,7 @@ function Followedlist(props) {
             })
     }, [])
     
+    history.pushState(null, null, '/users/'+id);
     
     
 

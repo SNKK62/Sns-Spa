@@ -33,24 +33,14 @@ function App(props) {
     }
 
     
-    // 戻るボタンを押した時の処理を追加
-    history.pushState(null, null, '/posts');
-    // history.replaceState(null,null,null)
-
-    // window.addEventListener("pushState", function() {
     
-    // // -2で2つ戻る(-1なら1つ戻る)
-    // // history.go(-2);
-    // history.pushState(null, null, null);
-        
-    // })
 
     return (
         <>
             <Header reloaduser={reloaduser} serchshow={serchshow} setSerchshow={ setSerchshow} />
             {!serchshow && (
                 <Switch>
-                    <Route exact path="/users" component={Userlist}/>
+                    {/* <Route exact path="/users" component={Userlist}/> */}
                     <Route exact path="/posts" component={Postlist} />
                     <Route exact path="/users/:id" render={() => < User url={url} setUrl={setUrl} user={user} setUser={setUser} followcount={followcount} setFollowcount={setFollowcount} followedcount={followedcount} setFollowedcount={setFollowedcount} reloaduser={reloaduser} />}/>
                     <Route exact path="/signup" component={ Signup }/>

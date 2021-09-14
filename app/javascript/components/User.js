@@ -166,6 +166,9 @@ function  User(props) {
             });
     }
 
+    history.pushState(null, null, '/posts');
+
+
     return (
         <>
             <div className="parent ">
