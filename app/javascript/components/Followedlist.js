@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import './App.css'
 import axios from 'axios'
 import Follow from './Follow'
+import { withRouter} from 'react-router-dom'
 
 const Logo = styled.div`
   text-align: center;
@@ -21,11 +22,11 @@ const Row = styled.div`
   padding-left: 1em;
   z-index: 2;
   border-top: 1px solid black;
-  padding: 5px 5px 5px 5px;
-  text-align: center;
+  padding: 5px 5px 5px 10px;
+  text-align: left;
   position: relative;
   
-  
+  ${({current,id}) => (current.id === id) && `color: red;`}
 `;
 
 
@@ -63,7 +64,7 @@ function Followedlist(props) {
                 <Logo>{user.name}をフォローしているユーザー</Logo>
                 {users.map((val, key) => {
                     return (
-                        <Row key={key}>
+                        <Row key={key} current={current} id={val.id} onClick={() => {props.history.push(`/users/${val.id}`)}}>
                             {val.name}
                             { (current && current.id !== Number(val.id)) && (<>
                             <Follow nid={id} id={val.id}/>
@@ -77,4 +78,4 @@ function Followedlist(props) {
 
 }
 
-export default Followedlist
+export default withRouter(Followedlist)

@@ -48,7 +48,7 @@ function Newpost(props) {
         <>
             <Nametug>新規投稿</Nametug>
             <Inputname id="new" type="text" onChange={(event) => { setContent(event.target.value);} }/>
-            <Submitbutton disabled={(!content || /^\s*$/.test(content))} onClick={() => { addpost(); props.setModalshow(false); document.getElementById('new').value = ""; props.reload();}}>投稿する</Submitbutton>
+            <Submitbutton disabled={(!content || /^\s*$/.test(content))} onClick={() => { addpost(); props.setModalshow(false); document.getElementById('new').value = ""; setTimeout(() => { for (var i = 0; i < 10; i++) { props.setIscha(i) } },1100) }}>投稿する</Submitbutton>
         </>
     )
 }

@@ -114,6 +114,13 @@ function  User(props) {
             }).catch(e => {
                 console.log(e);
             });
+        axios.get(`/api/v1/users/${id}/posts`)
+        .then(resp => {
+            setPosts(resp.data)
+        })
+            .catch(e => {
+            console.log(e)
+        })
     },[modalshow, ischa])
 
     

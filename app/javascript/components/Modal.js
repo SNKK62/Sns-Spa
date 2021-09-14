@@ -74,7 +74,7 @@ function Modal(props) {
                     <Userimage setIscha={props.setIscha} reload={props.reload} setModalshow={props.setModalshow} user={props.user} setUser={props.setUser} />
           )}
           {props.type === 'add' && (
-            <Newpost  reload={props.reload} setModalshow={props.setModalshow} />
+            <Newpost  reload={props.reload} setModalshow={props.setModalshow} setIscha={props.setIscha} />
           )}
             </Modalform>
         </Overlay>

@@ -11,9 +11,9 @@ const Followbutton = styled.button`
   color: white;
   text-align: center;
   height: 30px;
-  width: 120px;
+  width: 100px;
   position: absolute;
-  right: 30px;
+  right: 0px;
   ${({ follow }) => 
     follow ? `background: red; border-color: red;`:
     `background: blue; border-color: blue;`
@@ -63,9 +63,9 @@ function Follow(props) {
 
     return (<>
         { follow ? (
-                    <Followbutton follow={true} onClick={() => { unfollow(); }}>フォロー解除</Followbutton>
+            <Followbutton follow={true} onClick={(e) => { e.stopPropagation(); unfollow(); }}>フォロー解除</Followbutton>
     ):(
-                        <Followbutton follow={false} onClick={() => { following() }}>フォロー</Followbutton>
+                <Followbutton follow={false} onClick={(e) => { e.stopPropagation(); following() }}>フォロー</Followbutton>
     )}
     </>)
 }

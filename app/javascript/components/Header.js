@@ -12,10 +12,11 @@ import axios from 'axios'
 const Headerstyle = styled.div`
   background: rgb(153,204,255);
   height: 50px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   margin-bottom: 15px;
+  z-index: 300;
   ${({ serchshow }) => 
     serchshow ? `box-shadow: 0 -1px 1px rgb(0,0,0,0.3) inset;` :
         `box-shadow: 0 3px 10px rgb(0,0,0,0.3);`
@@ -61,8 +62,9 @@ const Backbutton = styled.span`
 
 
 const Serchback = styled.div`
-  top: 100px;
-  width: 100%;
+  
+  width: 100vw;
+  padding-top: 50px;
   left:0;
   display: flex;
   flex-flow: column;
@@ -86,6 +88,7 @@ const Selectbar = styled.div`
   justify-content:right;
   align-items: center;
   box-shadow: 0 5px 10px rgb(0,0,0,0.3) inset;
+  z-index: 300;
 `;
 
 const Tabuser = styled.div`
@@ -111,7 +114,7 @@ const Tabpost = styled.div`
 const Row = styled.div`
   
   width: 60%;
-  margin: 10px 20px 0 20px;
+  margin: 10px 20px 10px 20px;
   z-index: 100;
   background: rgb(204,204,255);
   padding: 7px 5px 7px 5px;
