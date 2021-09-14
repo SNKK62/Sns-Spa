@@ -16,6 +16,7 @@ const Headerstyle = styled.div`
   display: flex;
   justify-content: space-around;
   margin-bottom: 15px;
+  
   z-index: 300;
   ${({ serchshow }) => 
     serchshow ? `box-shadow: 0 -1px 1px rgb(0,0,0,0.3) inset;` :
@@ -35,7 +36,7 @@ const Serch = styled.input`
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 5px;
-  padding: 0;
+  
   width: 85%;
   background-color: rgb(153,204,255);
   height: 80%;
@@ -50,7 +51,9 @@ const Serch = styled.input`
 const Serchbutton = styled.span`
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 1em;
+  margin-right: 10px;
+  padding-right: 15px;
+
 `;
 
 const Backbutton = styled.span`
@@ -64,7 +67,7 @@ const Backbutton = styled.span`
 const Serchback = styled.div`
   
   width: 100vw;
-  padding-top: 50px;
+  padding-top: 30px;
   left:0;
   display: flex;
   flex-flow: column;
@@ -79,7 +82,8 @@ const Serchback = styled.div`
 
 const Selectbar = styled.div`
   height: 50px;
-  width:100%;
+  width:100vw;
+  
   position: absolute;
   top: 50px;
   display: flex;
