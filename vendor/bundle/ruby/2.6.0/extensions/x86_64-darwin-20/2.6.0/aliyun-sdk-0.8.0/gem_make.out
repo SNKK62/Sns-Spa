@@ -1,0 +1,16 @@
+current directory: /Users/kokiseno/ruby/environment/sns-spa/vendor/bundle/ruby/2.6.0/gems/aliyun-sdk-0.8.0/ext/crcx
+/Users/kokiseno/.rbenv/versions/2.6.6/bin/ruby -I /Users/kokiseno/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210915-13916-19f5iz7.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kokiseno/ruby/environment/sns-spa/vendor/bundle/ruby/2.6.0/gems/aliyun-sdk-0.8.0/ext/crcx
+make DESTDIR\= clean
+
+current directory: /Users/kokiseno/ruby/environment/sns-spa/vendor/bundle/ruby/2.6.0/gems/aliyun-sdk-0.8.0/ext/crcx
+make DESTDIR\=
+compiling crc64_ecma.c
+compiling crcx.c
+linking shared-object aliyun/crcx.bundle
+
+current directory: /Users/kokiseno/ruby/environment/sns-spa/vendor/bundle/ruby/2.6.0/gems/aliyun-sdk-0.8.0/ext/crcx
+make DESTDIR\= install
+/usr/local/bin/ginstall -c -m 0755 crcx.bundle ./.gem.20210915-13916-10to87z/aliyun
