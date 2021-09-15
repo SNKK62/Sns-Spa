@@ -25,7 +25,7 @@ gem 'faker'
 gem 'bcrypt'
 gem 'carrierwave'
 gem 'pg' , group:  :production
-gem 'fog' , group: :production
+gem 'fog-aws' , group: :production
 gem 'mini_magick'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
